@@ -4,15 +4,20 @@
   padding: 0;
 }
 
+:root {
+  --c-brand: #2d2e32;
+  --primary-font: 'Poppins', sans-serif;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: white;
-  font-family: 'Poppins', sans-serif;
-  position: relative;
+  font-family: var(--primary-font) !important;
+  color: var(--c-brand) !important;
+  overflow-x: hidden !important;
 }
 
 .container {
@@ -57,4 +62,79 @@ body {
 
 *::-webkit-scrollbar-thumb:active {
   background-color: #8e8e8e;
+}
+
+canvas {
+  position: absolute;
+}
+
+.glassEffect {
+  background: #5d5d5d1c;
+  z-index: 2;
+  position: relative;
+  padding-top: 8px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+}
+
+.date-class {
+  font-size: 1.4rem;
+  color: #161414c5;
+  margin-left: 0.2rem;
+}
+
+.stack {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.stack p {
+  color: #000 !important;
+  font-weight: 600 !important;
+  background-color: #fff;
+  box-shadow: 0 0 10px #0000001a;
+  padding: 1rem 1.3rem;
+  font-family: Mulish, sans-serif !important;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.links a {
+  font-size: 1.7rem;
+  color: #2d2e32;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
