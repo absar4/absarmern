@@ -1,68 +1,61 @@
-import { useState } from 'react'
-import { IconMenu2, IconX } from '@tabler/icons-react'
 import '../styles/Navbar.css'
 
 const Navbar = () => {
-  const [hamburger, setHamburger] = useState(false)
-
-  const hamburgerMenu = () => {
-    setHamburger(!hamburger)
-  }
-
   const pageUp = () => {
     window.scrollTo({ top: (0, 0), behavior: 'smooth' })
   }
-
-  const navlinks = [
-    {
-      name: 'Home',
-      link: '#home',
-    },
-    {
-      name: 'About',
-      link: '#about',
-    },
-    {
-      name: 'Projects',
-      link: '#projects',
-    },
-    {
-      name: 'Contact',
-      link: '#contact',
-    },
-  ]
   return (
     <>
-      <nav>
-        <h3 onClick={pageUp} className='logo'>
-          Absar.dev
-        </h3>
-        <ul>
-          {navlinks.map((item) => (
-            <li key={item.name}>
-              <a href={item.link}>{item.name}</a>
-            </li>
-          ))}
-          <li onClick={() => hamburgerMenu()}>
-            <IconMenu2 className='mobile-menu' width={30} height={30} />
-          </li>
-        </ul>
+      <nav
+        className='navbar navbar-expand-lg bg-body-tertiary fixed-top'
+        data-bs-theme='dark'>
+        <div className='container'>
+          <a className='navbar-brand fw-bold' href='#'>
+            Absar.dev
+          </a>
+          <button
+            className='navbar-toggler'
+            type='button'
+            data-bs-toggle='collapse'
+            data-bs-target='#navbarSupportedContent'
+            aria-controls='navbarSupportedContent'
+            aria-expanded='false'
+            aria-label='Toggle navigation'>
+            <span className='navbar-toggler-icon'></span>
+          </button>
+          <div
+            className='collapse navbar-collapse text-center'
+            id='navbarSupportedContent'>
+            <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
+              <li className='nav-item'>
+                <a className='nav-link active' aria-current='page' href='#'>
+                  Home
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href='#about'>
+                  About
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href='#services'>
+                  Services
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href='#work'>
+                  Work
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a className='nav-link' href='#contact'>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-
-      {/* mobile nav */}
-      <div className={`mobile-nav ${hamburger ? 'open-menu' : 'closed-menu'}`}>
-        <span onClick={() => hamburgerMenu()}>
-          <IconX width={30} height={30} />
-        </span>
-
-        <ul>
-          {navlinks.map((item) => (
-            <li key={item.name} onClick={() => hamburgerMenu()}>
-              <a href={item.link}>{item.name}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
     </>
   )
 }
