@@ -145,7 +145,7 @@ const Hero = () => {
                 </a>
               </span>
             </div>
-            <div className='col-lg-6'>
+            <div className='col-lg-6 d-flex justify-content-end'>
               <div className='hero-img'></div>
             </div>
           </div>
