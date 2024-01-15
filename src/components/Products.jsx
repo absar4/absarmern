@@ -10,7 +10,7 @@ import '../styles/Products.css'
 
 const Products = () => {
   return (
-    <section id='projects' className='project'>
+    <section id='work' className='project'>
       <div className='container'>
         <div className='project-content'>
           <p>portfolio</p>

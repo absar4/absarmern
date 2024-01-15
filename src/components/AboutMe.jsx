@@ -29,7 +29,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <section className='about-section position-relative'>
+      <section id='about' className='about-section position-relative'>
         <div id='dot' ref={dotRef}></div>
 
         <div className='card-portfolio'>
