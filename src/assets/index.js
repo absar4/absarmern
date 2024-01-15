@@ -5,6 +5,7 @@ import tailwindSassFigma from './img/tailwindSassFigma.svg'
 import bsxd from './img/bsxd.svg'
 import jsreact from './img/jsreact.svg'
 import earthAnimated from './img/Earth animated.gif'
+import softwareEngineer from './img/softwareEngineer.png'
 export {
   wavingHand,
   ahencyFigma,
@@ -13,4 +14,5 @@ export {
   tailwindSassFigma,
   jsreact,
   earthAnimated,
+  softwareEngineer,
 }

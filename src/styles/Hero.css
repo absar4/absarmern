@@ -43,7 +43,6 @@
   transition: all 1s ease-in-out;
 }
 
-.about-section,
 .hero-container {
   height: 100vh;
   display: flex;
