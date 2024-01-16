@@ -1,9 +1,6 @@
 import '../styles/Navbar.css'
 
 const Navbar = () => {
-  const pageUp = () => {
-    window.scrollTo({ top: (0, 0), behavior: 'smooth' })
-  }
   return (
     <>
       <nav
