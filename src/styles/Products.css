@@ -48,14 +48,12 @@
   height: 40rem;
   flex-direction: row;
   padding: 2rem;
-  gap: 8rem;
+  justify-content: space-around;
 }
 @media (max-width: 1020px) {
   .projects-grid .pro__1 {
     height: 75rem;
     flex-direction: column !important;
-    gap: 3rem;
-    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
   }
