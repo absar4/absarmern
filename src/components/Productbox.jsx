@@ -17,7 +17,7 @@ const Productbox = ({
   return (
     <>
       <div className={`pro pro__1 ${cName}`}>
-        <div className='pro__img'>
+        <div className='pro__img mb-5 mb-lg-0'>
           <a target='_blank' href={demo} rel='noreferrer'>
             <img
               src={img}

@@ -13,8 +13,8 @@ const Services = () => {
     <section id='services' className='services'>
       <div className='container'>
         <h2 className='services-heading'>Services</h2>
-        <div className='row justify-content-evenly align-items-center mb-5'>
-          <div className='col-md-3'>
+        <div className='row justify-content-evenly align-items-center gap-5 gap-lg-0 mb-5'>
+          <div className='col-lg-3'>
             <div className='card px-2'>
               <div className='card-body'>
                 <IconTemplate
@@ -35,7 +35,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className='col-md-3'>
+          <div className='col-lg-3'>
             <div className='card px-2'>
               <div className='card-body'>
                 <IconDeviceDesktopAnalytics
@@ -55,7 +55,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className='col-md-3'>
+          <div className='col-lg-3'>
             <div className='card px-2'>
               <div className='card-body'>
                 <IconListCheck
@@ -73,8 +73,8 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div className='row justify-content-evenly align-items-center'>
-          <div className='col-md-3'>
+        <div className='row justify-content-evenly align-items-center gap-5 gap-lg-0'>
+          <div className='col-lg-3'>
             <div className='card px-2'>
               <div className='card-body'>
                 <IconCpu
@@ -94,7 +94,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className='col-md-3'>
+          <div className='col-lg-3'>
             <div className='card px-2'>
               <div className='card-body'>
                 <IconBrandReact
@@ -115,7 +115,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className='col-md-3'>
+          <div className='col-lg-3'>
             <div className='card px-2'>
               <div className='card-body'>
                 <IconApi

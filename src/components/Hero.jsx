@@ -116,8 +116,8 @@ const Hero = () => {
       <section className='container hero-container'>
         <canvas id='canvas' ref={canvasRef}></canvas>
         <section className='content content-hero'>
-          <div className='hero-part row justify-content-between py-5'>
-            <div className='hero-text col-lg-6'>
+          <div className='hero-part row justify-content-between flex-column-reverse flex-lg-row py-5'>
+            <div className='hero-text text-center text-lg-start col-lg-6'>
               <h1>
                 Front-End React Developer
                 <img src={wavingHand} className='hand' alt='waving_hand' />
@@ -145,7 +145,7 @@ const Hero = () => {
                 </a>
               </span>
             </div>
-            <div className='col-lg-6 d-flex justify-content-end'>
+            <div className='col-lg-6 d-flex justify-content-center justify-content-lg-end'>
               <div className='hero-img'></div>
             </div>
           </div>
