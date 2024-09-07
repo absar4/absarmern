@@ -20,8 +20,7 @@
 }
 
 .about-section {
-  background: url('https://source.unsplash.com/E8Ufcyxz514/2400x1823') center /
-    cover no-repeat fixed;
+  background: url('../assets/img/about-bg.png') center / cover no-repeat fixed;
 }
 
 .about-section .card-portfolio {
@@ -35,4 +34,10 @@
   background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
+}
+
+@media (max-width: 480px) {
+  .about-section .card-portfolio {
+    width: 90%;
+  }
 }

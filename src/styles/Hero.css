@@ -68,3 +68,10 @@
 }
 
 /* !tech skills */
+
+@media (max-width: 480px) {
+  .hero-container {
+    margin-top: 5% !important;
+    height: auto !important;
+  }
+}
